@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 800px; height: 800px; overflow: hidden; }
+
+  body {
+    position: relative;
+    background:
+      radial-gradient(600px 600px at 70% 25%, rgba(31, 122, 140, 0.35), transparent 65%),
+      radial-gradient(500px 500px at 20% 85%, rgba(19, 58, 92, 0.55), transparent 65%),
+      linear-gradient(135deg, #0e2233 0%, #0c1b2a 55%, #091420 100%);
+  }
+
+  .stripes {
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      -35deg,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 2px,
+      transparent 2px,
+      transparent 22px
+    );
+  }
+
+  .outer-ring {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 716px; height: 716px;
+    border-radius: 50%;
+    border: 2px solid rgba(127, 209, 200, 0.45);
+  }
+
+  .photo-ring {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 684px; height: 684px;
+    border-radius: 50%;
+    border: 12px solid #c9a257;
+    overflow: hidden;
+    background: #ccdaf5;
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
+  }
+
+  .photo-ring img {
+    position: absolute;
+    width: 1138px;
+    left: -147px;
+    top: -117px;
+  }
+</style>
+</head>
+<body>
+  <div class="stripes"></div>
+  <div class="outer-ring"></div>
+  <div class="photo-ring">
+    <img src="illustration.png">
+  </div>
+</body>
+</html>
