@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 150px; height: 150px; background: transparent; overflow: hidden; }
+
+  .badge {
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    border: 4px solid #c9a257;
+    background: rgba(12, 27, 42, 0.94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ele {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #c9a257;
+    line-height: 1;
+  }
+
+  .dc {
+    margin-top: 6px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #7fd1c8;
+    line-height: 1;
+    padding-left: 6px; /* optically center against letter-spacing */
+  }
+</style>
+</head>
+<body>
+  <div class="badge">
+    <div class="ele">ELE</div>
+    <div class="dc">DC</div>
+  </div>
+</body>
+</html>
